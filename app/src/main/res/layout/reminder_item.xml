@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:id="@+id/reminder_item">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/poster_img_remind"
+        android:src="@drawable/ic_baseline_person_24"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_title_remind"
+            android:text="Movie name"
+            android:textColor="#FA7400"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release date: "
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_release_remind"
+                android:text="2000/01/01"
+                android:layout_marginStart="5dp"
+                android:textColor="#34AAE1"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_date_remind"
+            android:textColor="#34AAE1"
+            android:text="00:00 - 01/01/2000"/>
+    </LinearLayout>
+</LinearLayout>
